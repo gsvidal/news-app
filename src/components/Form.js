@@ -4,8 +4,18 @@ import useSelect from '../hooks/useSelect';
 
 const Form = () => {
 
+  const OPTIONS = [
+    { value: "general", label: "General"},
+    { value: "business", label: "Business"},
+    { value: "entertaiment", label: "Entertaiment"},
+    { value: "health", label: "Health"},
+    { value: "science", label: "Science"},
+    { value: "sports", label: "Sports"},
+    { value: "technology", label: "Technology"}
+  ]
+
   // Using custom hook
-  const [ category, SelectNews ] = useSelect();
+  const [ category, SelectNews ] = useSelect("general", OPTIONS);
 
   return(
     <div className={`${styles.search} row`}>
