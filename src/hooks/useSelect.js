@@ -4,11 +4,11 @@ const useSelect = (initialState, options) => {
   // Custom hook state
   const [ state, setState ] = useState(initialState);
 
-  const SelectNews = () => (
+  const SelectItem = ({item}) => (
     <select 
       name="" 
       id=""
-      className="browser-default"
+      className={`col s9 browser-default ${item === "news" ? "" : "cyan lighten-5 select-country"}`}
       value={state}
       onChange={event => setState(event.target.value)}
     >
@@ -19,7 +19,7 @@ const useSelect = (initialState, options) => {
     </select>
   )
 
-  return [state, SelectNews];
+  return [state, SelectItem];
 }
 
 export default useSelect;

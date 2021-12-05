@@ -2,26 +2,36 @@ import React from 'react';
 import styles from './Form.module.css';
 import useSelect from '../hooks/useSelect';
 
-const Form = ({setCategory}) => {
+const Form = ({setCategory, setCountry}) => {
 
-  const OPTIONS = [
+  const optionsCategories = [
     { value: "general", label: "General"},
     { value: "business", label: "Business"},
-    { value: "entertaiment", label: "Entertaiment"},
+    { value: "entertainment", label: "Entertainment"},
     { value: "health", label: "Health"},
     { value: "science", label: "Science"},
     { value: "sports", label: "Sports"},
     { value: "technology", label: "Technology"}
   ]
+  const optionsCountries = [
+    { value: "us", label: "United States"},
+    { value: "au", label: "Australia"},
+    { value: "br", label: "Brazil"},
+    { value: "ng", label: "England"},
+    { value: "mx", label: "Mexico"},
+    { value: "ru", label: "Russia"},
+  ]
 
   // Using custom hook
-  const [ category, SelectNews ] = useSelect("technology", OPTIONS);
+  const [ category, SelectNews ] = useSelect("technology", optionsCategories);
+  const [ country, SelectCountry] = useSelect("us", optionsCountries);
 
   // Submit to form, send category to app.js
   const handleSubmit = event => {
     event.preventDefault();
 
     setCategory(category);
+    setCountry(country);
   }
 
   return(
@@ -32,8 +42,18 @@ const Form = ({setCategory}) => {
           onSubmit={handleSubmit}
           >
           <h2 className={styles.heading}>Search news by categories</h2>
-
-          <SelectNews />
+          <div className="row">
+            <p className="col s3">Country:</p>
+            <SelectCountry 
+              item="country"
+            />
+          </div>
+          <div className="row">
+            <p className="col s3">Category:</p>
+            <SelectNews 
+              item="news"
+            />
+          </div>
 
           <div className="input-field col s12">
             <button
