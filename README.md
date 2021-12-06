@@ -1,6 +1,6 @@
 # News App
 
-`**IMPORTANT: Since May 22, 2020, the newsapi.org API only works in local mode, so in order to use it in production, buying a paid license is required, because of that this project's gh-pages deployed version is not available , just the repository**`
+`IMPORTANT: Since May 22, 2020, the newsapi.org API only works in local mode, so in order to use it in production, buying a paid license is required, because of that this project's gh-pages deployed version is not available , just the repository`
 
 <a href="https://github.com/gsvidal/news-app">
   <img src="https://i.postimg.cc/QCmmjRPq/news-app.png">
