@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './News.module.css';
+import PropTypes from 'prop-types';
 
 const News = ({newsElement}) => {
 
@@ -48,6 +49,10 @@ const News = ({newsElement}) => {
     </div>
     
   );
+}
+
+News.propTypes = {
+  newsElement: PropTypes.object.isRequired
 }
 
 export default News;

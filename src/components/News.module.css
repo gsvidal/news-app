@@ -9,7 +9,6 @@ h4 {
 
 .card-news {
   height: 1000px;
-  /* max-height: 1200px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

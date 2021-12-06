@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Form.module.css';
 import useSelect from '../hooks/useSelect';
+import PropTypes from 'prop-types';
 
 const Form = ({setCategory, setCountry}) => {
 
@@ -54,7 +55,6 @@ const Form = ({setCategory, setCountry}) => {
               item="news"
             />
           </div>
-
           <div className="input-field col s12">
             <button
               type="submit"
@@ -69,6 +69,9 @@ const Form = ({setCategory, setCountry}) => {
   );
 }
 
-
+Form.propTypes = {
+  setCategory: PropTypes.func.isRequired,
+  setCountry: PropTypes.func.isRequired
+}
 
 export default Form;

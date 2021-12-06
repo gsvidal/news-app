@@ -26,13 +26,11 @@ function App() {
       <Header 
         title="News App"
       />
-
       <div className="container blue-grey lighten-5">
         <Form 
           setCategory={setCategory}
           setCountry={setCountry}
         />
-
         <ListNews 
           news={news}
         />

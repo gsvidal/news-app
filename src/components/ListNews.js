@@ -1,5 +1,6 @@
 import React from 'react';
 import News from './News';
+import PropTypes from 'prop-types';
 
 const ListNews = ({news}) => {
   return(
@@ -12,6 +13,10 @@ const ListNews = ({news}) => {
       ))}
     </div>
   );
+}
+
+ListNews.propTypes = {
+  news: PropTypes.array.isRequired
 }
 
 export default ListNews;
