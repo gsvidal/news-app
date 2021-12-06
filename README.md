@@ -1,3 +1,29 @@
+# News App
+
+`**Note: Since May 22, 2020, the API only works in local mode, so in order to use it in production, buying a paid license is required, because of that this project's gh-pages deployed version is not available , just the repository**`
+
+<a href="https://github.com/gsvidal/news-app">
+  <img src="https://i.postimg.cc/QCmmjRPq/news-app.png">
+</a> 
+
+A React App where you can get worldwide news with their images, title, author, date and description and you can go to read its content right to the original source!
+The news data is from <a href="https://newsapi.org/">News API org</a> 
+
+
+## Technologies used and Features:
+
+- Create React App.
+
+- Materialize CSS Framework.
+
+- Fetch with async await for retrieving data from the API 
+
+- Custom hook for both Select Countries and Select Categories.
+
+- Documented with Prop Types.
+
+<hr />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
