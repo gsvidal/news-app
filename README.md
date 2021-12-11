@@ -14,7 +14,7 @@ The news data is from <a href="https://newsapi.org/">News API org</a>
 
 - Create React App.
 
-- Materialize CSS Framework.
+- Materialize CSS Framework & CSS Modules.
 
 - Fetch with async await for retrieving data from the API 
 
